@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+/* body{
+    background-image: url("./img/bg.jpg");
+    background-size: 110vw 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: beige;
+    height: 90vmin;
+    width: 88vmin;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vmin;
+    margin-bottom: 5vmin;
+    border-radius: 5%;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    font-size: 4vmin;
+}
+#scoreBox{
+    height: 35vmin;
+    width: 35vmin;
+    border: 1px solid black;
+    display: flex;
+    position: absolute;
+    
+} */
+body {
+    background-image: url("./img/bg.jpg");
+    background-size: 110vw 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Set relative positioning */
+}
+
+#scoreBox {
+    position: absolute;
+    top: 2vmin;
+    right: 2vmin;
+    height: 10vmin;
+    width: 35vmin;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    font-size: 6vmin;
+}
+#scoreBox p{
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    font-size: 3vmin;
+    display: block;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: beige;
+    height: 90vmin;
+    width: 88vmin;
+    margin: 5vmin auto;
+    border-radius: 5%;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    font-size: 4vmin;
+}
+
+#game{
+    height: 72vmin;
+    width: 72vmin;
+    border: 5px groove olive;
+    border-radius: 5%;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+
+}
+
+.foodParticle{
+    background-color: blue;
+    border-radius: 50%;
+}
+.head{
+    background-color: brown;;
+    border-radius: 50%;
+}
+.snake{
+    background-color: green;
+    border-radius: 50%;
+}
